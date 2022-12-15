@@ -1,0 +1,104 @@
+@import "../vendor/normalize.css";
+
+/*
+--------------------------------------------------------
+FONTS for this Project:
+Inter:
+Regular 400
+Medium 500
+Bold 700
+
+Noto Serif:
+Regular 400
+
+for Inter use Arial as a fallback and use the generic sans-serif family in case the user
+ doesn't have either of the other fonts.
+For Noto Serif, use TImes New Roman as a fallback and use the generic serif family...
+
+<style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Ubuntu+Condensed&display=swap'); </style>
+
+font-family: 'Inter', sans-serif;
+font-family: 'Ubuntu Condensed', sans-serif;
+
+
+CODE IT LIKE THIS ACCORDING TO THE BRIEF which mentions the fallback fonts to use...:
+
+font-family: 'Inter', 'Arial' sans-serif;
+font-family: 'Ubuntu Condensed', 'Times New Roman' sans-serif;
+--------------------------------------------------------
+*/
+
+/* step 6 */
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto; /* so the block is centered for screens over 1600px wide ?? */
+  font-family: "Inter", "Arial" sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* PART OF THE STRUCTURE OF WEBPAGE */
+/* Task 1: Header styling in brief */
+.header {
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border: 2px dashed red;
+}
+
+/* Task 1: Header: step 1 (logo tweak) in brief */
+.logo {
+  width: 125px;
+  height: 142px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+/* nav block */
+.nav {
+  display: flex;
+  justify-content: flex-end; /* this worked */
+  align-items: center;
+  border: 2px dashed rgb(255, 94, 0); /* just for aligning elements */
+}
+
+/*element of nav block steps 1-5 */
+.nav__links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color linear 0.5s; /* hover state created */
+}
+
+/* the sections contained within main */
+.menu {
+}
+
+.recipes {
+}
+
+.reservation {
+}
+
+.about {
+}
