@@ -178,6 +178,34 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 
 /* the sections contained within main */
 .menu {
+  padding-top: 100px;
+}
+
+.menu__title {
+}
+
+.menu__subtitle {
+}
+
+.menu__cards {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.card {
+}
+
+.card__content {
+}
+
+.card__title {
+}
+
+.card__list-item {
+}
+
+.card__coffee-size {
 }
 
 .recipes {
