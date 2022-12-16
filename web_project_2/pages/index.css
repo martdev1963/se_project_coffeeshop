@@ -197,15 +197,27 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 }
 
 .card__content {
+  display: flex;
+  flex-direction: row;
 }
 
 .card__title {
+  display: flex;
 }
 
 .card__list-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .card__coffee-size {
+  display: flex;
+  flex-direction: row;
+}
+
+.card__list-divider {
+  border-bottom: 3px solid rgb(0, 0, 0);
+  flex-grow: 4;
 }
 
 .recipes {
