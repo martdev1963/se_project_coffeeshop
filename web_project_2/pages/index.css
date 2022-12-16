@@ -18,13 +18,13 @@ For Noto Serif, use TImes New Roman as a fallback and use the generic serif fami
 <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Ubuntu+Condensed&display=swap'); </style>
 
 font-family: 'Inter', sans-serif;
-font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Noto Serif', sans-serif;
 
 
 CODE IT LIKE THIS ACCORDING TO THE BRIEF which mentions the fallback fonts to use...:
 
 font-family: 'Inter', 'Arial' sans-serif;
-font-family: 'Ubuntu Condensed', 'Times New Roman' sans-serif;
+font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 --------------------------------------------------------
 */
 
@@ -39,17 +39,95 @@ font-family: 'Ubuntu Condensed', 'Times New Roman' sans-serif;
 }
 
 /* PART OF THE STRUCTURE OF WEBPAGE */
-/* Task 1: Header styling in brief */
+/* Task 1: Header styling in brief. Header is the viewport */
 .header {
+  height: 100vh; /* 100% of the viewport for screens sizes of 720px - 800px*/
+  min-height: 720px;
+  max-height: 800px;
   background-color: #ffffff;
   background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border: 2px dashed red;
+  border: 2px dashed red; /* just to check alignment of elements */
 }
 
-/* Task 1: Header: step 1 (logo tweak) in brief */
+/* 1.Header task 7:  typography: 3 */
+.header__title {
+  display: block;
+  color: #000000;
+  position: absolute;
+  top: 202px;
+  left: 80px;
+  font-family: Inter; /* already inherited from .page parent class */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 28px;
+}
+
+/* 1.Header task 8: typography: 4 */
+.header__description {
+  max-width: 683px;
+  /*margin: 202px 50px 20px 80; /*shorthand: top, right, bottom, left */
+  position: absolute;
+  top: 350px;
+  left: 80px;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* 1.Header task 7: span tag portion  typography: 2 */
+.header__span-accent {
+  font-family: "Noto Serif", "Times New Roman" sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 10px;
+  color: #2f80ed;
+}
+
+.header__image {
+  max-width: 646px;
+  max-height: 568px;
+  position: absolute;
+  top: 124px;
+  right: 5px;
+}
+
+/* typography: 5 */
+.header__paragraphs {
+  /* display: flex;
+  justify-content: flex-end; */
+  border: 2px solid #17cd32; /* just to check alignment of elements */
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  width: 95%; /* to make room to push address p tag far to the right */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px; /* already inherited from .page parent class */
+  line-height: 20px; /* already inherited from .page parent class */
+}
+
+.header__paragraph {
+  border: 2px double #e65019; /* just to check alignment of elements */
+  margin: 0;
+  padding: 0;
+}
+
+/* BEM: block__element_key_value (modifier) */
+.header__paragraph_content_address {
+  position: absolute;
+  right: 80px;
+  margin-bottom: 40px;
+}
+
+/* Task 1: Header: step 1 (logo block) in brief */
 .logo {
   width: 125px;
   height: 142px;
@@ -58,12 +136,19 @@ font-family: 'Ubuntu Condensed', 'Times New Roman' sans-serif;
   left: 30px;
 }
 
-/* nav block */
+/* nav block  typography: 1 */
 .nav {
   display: flex;
   justify-content: flex-end; /* this worked */
   align-items: center;
-  border: 2px dashed rgb(255, 94, 0); /* just for aligning elements */
+  margin-top: 30px;
+  margin-right: 80px;
+  border: 2px dashed rgb(71, 13, 220); /* just for aligning elements */
+  font-family: Inter; /* already inherited from .page parent class */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px; /* already inherited from .page parent class */
+  line-height: 20px; /* already inherited from .page parent class */
 }
 
 /*element of nav block steps 1-5 */
