@@ -188,9 +188,11 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 }
 
 .menu__cards {
+  display: flex;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  border: 2px solid #e65019; /* just for aligning elements */
 }
 
 .card {
