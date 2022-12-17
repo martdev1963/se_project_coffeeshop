@@ -189,6 +189,8 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 
 .menu__cards {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -196,6 +198,11 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 }
 
 .card {
+  flex-basis: 50%; /* adjusting the size of the menu cards with this. */
+}
+
+/* this is the "Baked Goods" card block which I want to move to next row and center it. */
+.card__card-on-next-row {
 }
 
 .card__content {
