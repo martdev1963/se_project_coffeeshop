@@ -206,12 +206,13 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 }
 
 .card__content {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-direction: row;*/
 }
 
 .card__title {
-  display: flex;
+  /*display: flex;*/
+  margin-left: 40px;
 }
 
 .card__list-item {
@@ -226,7 +227,7 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 
 .card__list-divider {
   border-bottom: 3px solid rgb(0, 0, 0);
-  flex-grow: 4;
+  flex-grow: 0.5;
 }
 
 .recipes {
