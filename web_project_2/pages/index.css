@@ -179,30 +179,50 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 /* the sections contained within main */
 .menu {
   padding-top: 100px;
+  background-image: url("../images/background_menu.svg");
+  background-color: #041b38;
 }
 
 .menu__title {
+  color: #ffffff;
+  margin-left: 750px;
 }
 
 .menu__subtitle {
+  color: #ffffff;
+  margin-bottom: 90px;
+  text-align: center;
 }
 
 .menu__cards {
-  display: flex;
-  justify-content: center;
+  margin-left: 410px;
+  max-width: fit-content;
+  color: #ffffff;
+  display: flex; /* this establishes a row by default making the main axis (x) */
+  justify-content: space-around;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
   border: 2px solid #e65019; /* just for aligning elements */
+  row-gap: 50px; /* adjusts the cross axis which is in this case col(y ) */
 }
 
 .card {
-  flex-basis: 50%; /* adjusting the size of the menu cards with this. */
+  flex-basis: 40%; /* adjusting the size of the menu cards with this. */
+}
+
+.card__filter {
+  margin-left: 40px;
+}
+
+.card__espresso {
 }
 
 /* this is the "Baked Goods" card block which I want to move to next row and center it. */
-.card__card-on-next-row {
+.card__baked-goods {
+  margin-left: 70px;
+  margin-bottom: 0px;
 }
 
 .card__content {
@@ -212,12 +232,12 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 
 .card__title {
   /*display: flex;*/
-  margin-left: 40px;
+  margin-left: 40px; /*to align the titles: Filter, Espresso, etc with the card__list-item elements*/
 }
 
 .card__list-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* this makes the column the main axis and cross axis is then row */
 }
 
 .card__coffee-size {
@@ -226,8 +246,8 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 }
 
 .card__list-divider {
-  border-bottom: 3px solid rgb(0, 0, 0);
-  flex-grow: 0.5;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  flex-grow: 0.7;
 }
 
 .recipes {
