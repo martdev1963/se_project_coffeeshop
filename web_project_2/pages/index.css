@@ -183,20 +183,32 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   background-color: #041b38;
 }
 
+/*Typography 1: */
 .menu__title {
   color: #ffffff;
   margin-left: 750px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
+/*Typography 2: */
 .menu__subtitle {
   color: #ffffff;
   margin-bottom: 90px;
   text-align: center;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .menu__cards {
-  margin-left: 410px;
-  max-width: fit-content;
+  margin-left: 80px;
+  max-width: 80vw; /*to stretch out the card list-dividers ( the underscores )*/
   color: #ffffff;
   display: flex; /* this establishes a row by default making the main axis (x) */
   justify-content: space-around;
@@ -204,8 +216,8 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  border: 2px solid #e65019; /* just for aligning elements */
-  row-gap: 50px; /* adjusts the cross axis which is in this case col(y ) */
+  /*border: 2px solid #e65019; /* just for aligning elements */
+  row-gap: 50px; /* adjusts the cross axis which is in this case col (y) */
 }
 
 .card {
@@ -213,7 +225,7 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 }
 
 .card__filter {
-  margin-left: 40px;
+  margin-left: 40px; /* this also pushes the .card__espresso to the right */
 }
 
 .card__espresso {
@@ -230,14 +242,26 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   /*flex-direction: row;*/
 }
 
+/*Typography 3: */
 .card__title {
   /*display: flex;*/
   margin-left: 40px; /*to align the titles: Filter, Espresso, etc with the card__list-item elements*/
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
 }
 
+/*Typography 4: */
 .card__list-item {
   display: flex;
   flex-direction: column; /* this makes the column the main axis and cross axis is then row */
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .card__coffee-size {
@@ -247,7 +271,7 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 
 .card__list-divider {
   border-bottom: 1px solid rgb(255, 255, 255);
-  flex-grow: 0.7;
+  flex-grow: 0.7; /*affects the length of the list-divider ( underscore )*/
 }
 
 .recipes {
