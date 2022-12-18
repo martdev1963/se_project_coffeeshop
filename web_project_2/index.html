@@ -157,7 +157,43 @@
             </li>
           </ul>
         </section>
-        <section class="recipes" id="recipes"></section>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for <br />your home-brewing
+            convenience:
+          </p>
+          <div class="recipes__videos">
+            <!--iframes go in here -->
+            <iframe
+              class="recipes__iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/j6VlT_jUVPc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="recipes__iframe"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/st571DYYTR8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!-- Using ul list for the recipes__video-caption element -->
+            <ul class="recipes__video-caption">
+              <li>Aeropress recipe</li>
+              <li>~5 min</li>
+              <li>French press recipe</li>
+              <li>~15 min</li>
+            </ul>
+          </div>
+        </section>
         <section class="reservation" id="reservation"></section>
         <section class="about" id="about"></section>
       </main>
