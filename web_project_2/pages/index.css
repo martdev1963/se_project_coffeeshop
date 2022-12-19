@@ -346,6 +346,8 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   max-width: 1600px;
   align-content: center;
   border: 2px solid #17cd32;
+  background-image: url("../images/background_reservation.svg");
+  background-color: rgb(222, 236, 247);
 }
 
 .reservation__title {
@@ -355,6 +357,12 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 80px;
+  /*Typography 1: */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 /*this is a div that contains the form */
@@ -363,12 +371,12 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   max-width: 385px;
   margin-left: 600px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 .reservation__form {
   display: block;
-  max-width: 385px;
+  max-width: 500px;
   column-gap: 29px;
   border: 2px solid #ea2899;
   text-align: center;
@@ -387,16 +395,53 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
 .form__label {
   display: inline;
   max-width: 385px;
+  /*Typography: 2 */
+  font-family: Inter;
+  font-size: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .form__input {
   max-width: 385px;
   margin-left: 70px;
+  height: 60px;
+  margin-top: 8px;
+  /*Typography: 3 */
+  font-family: Inter;
+  font-size: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__input-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-left: 62px;
+  border-radius: 2px;
+  background-color: #2f80ed;
+  background-image: url("../images/check.svg");
+}
+
+.form__input-checkbox-label {
+  margin-left: 12px; /*this is for the <span> 12px away from checkbox on the left */
 }
 
 .form__button {
   width: 385px;
+  height: 60px;
   margin-bottom: 30px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: opacity linear 0.3s;
+  opacity: 100%;
+}
+
+.form__button:hover {
+  opacity: 70%;
 }
 
 /* END OF FORM ELEMENTS */
