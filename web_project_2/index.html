@@ -194,7 +194,74 @@
             </ul>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <div class="reservation__form-container">
+            <!--reservation__form element will go in here -->
+            <form class="reservation__form">
+              <!--is a reusable block to reuse the form-->
+              <!--define the widths and margins in a mixer modifier class -->
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="name">
+                  Name *
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="number-of-guests">
+                  Number of guests *
+                  <input
+                    class="form__input"
+                    type="number"
+                    name="number-of-guests"
+                    id="number-of-guests"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="datetime-local">
+                  Date & time *
+                  <input
+                    class="form__input"
+                    type="datetime-local"
+                    name="datetime-local"
+                    id="datetime-local"
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="email">
+                  Your email *
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </label>
+              </fieldset>
+              <button class="form__button" name="Book-a-table">
+                Book a table
+              </button>
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="terms-of-use-checkbox">
+                  <input
+                    class="form__input"
+                    type="checkbox"
+                    name="checkbox"
+                    id="terms-of-use-checkbox"
+                  />
+                  I agree with the terms of use.
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </section>
         <section class="about" id="about"></section>
       </main>
       <footer class="footer" id="footer"></footer>

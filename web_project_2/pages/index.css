@@ -176,7 +176,7 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   transition: color linear 0.5s; /* hover state created */
 }
 
-/* the sections contained within main */
+/* 2 the sections contained within main */
 .menu {
   padding-top: 100px;
   background-image: url("../images/background_menu.svg");
@@ -324,7 +324,7 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   margin-bottom: 24px;
 }
 
-/* Recipe Typography 3: */
+/* 3. Recipe Typography 3: */
 .recipes__video-caption {
   display: flex;
   justify-content: space-evenly;
@@ -338,14 +338,73 @@ font-family: 'Noto Serif', 'Times New Roman' sans-serif;
   line-height: 30px;
 }
 
-/* resevation section */
+/* 4. reservation section */
+/* START OF FORM ELEMENTS */
 .reservation {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  align-content: center;
+  border: 2px solid #17cd32;
 }
 
-/* about section */
+.reservation__title {
+  border: 2px solid #5117cd;
+  margin-left: 640px;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+/*this is a div that contains the form */
+.reservation__form-container {
+  border: 2px solid #e71c1c;
+  max-width: 385px;
+  margin-left: 600px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.reservation__form {
+  display: block;
+  max-width: 385px;
+  column-gap: 29px;
+  border: 2px solid #ea2899;
+  text-align: center;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 385px;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 385px;
+}
+
+.form__label {
+  display: inline;
+  max-width: 385px;
+}
+
+.form__input {
+  max-width: 385px;
+  margin-left: 70px;
+}
+
+.form__button {
+  width: 385px;
+  margin-bottom: 30px;
+}
+
+/* END OF FORM ELEMENTS */
+
+/* 5. about section */
 .about {
 }
 
-/* footer section */
+/* 6. footer section */
 .footer {
 }
