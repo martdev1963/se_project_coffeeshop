@@ -374,7 +374,7 @@
 }
 
 .form__input {
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   height: 60px;
   margin-top: 8px;
   /*Typography: 3 */
@@ -383,7 +383,7 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  width: 300px;
+  width: 385px;
   margin-bottom: 32px;
 }
 
@@ -409,6 +409,7 @@
   border-radius: 4px;
   transition: opacity ease-in-out 0.3s;
   opacity: 100%;
+  /*Typography: 4 */
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -419,11 +420,22 @@
 .form__button:hover {
   opacity: 70%;
 }
-
 /* END OF FORM ELEMENTS */
 
 /* 5. about section */
 .about {
+}
+
+.about__title {
+}
+
+.about__content {
+}
+
+.about__paragraph {
+}
+
+.about__circle {
 }
 
 /* 6. footer section */
