@@ -424,18 +424,52 @@
 
 /* 5. about section */
 .about {
+  display: flex;
+  padding: 100px 80px; /* height width */
+  background-color: #0a0da4;
+  color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .about__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-width: 251px;
+  border: 2px solid #17cd32;
+  line-height: 5px;
+}
+
+.about__title-coffee-shop {
+  margin-top: 30px;
+
+  /* <span> tag to adjust coffee shop <h2> text margin-top down a bit. */
 }
 
 .about__content {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  margin-left: 720px;
 }
 
 .about__paragraph {
+  max-width: 660px;
+  margin-right: 80px;
 }
 
 .about__circle {
+  background-color: #2f80ed;
+  width: 495px;
+  height: 495px;
+  border-radius: 100%; /*combination of border-radius and position absolute makes a perfect circle*/
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: -1;
 }
 
 /* 6. footer section */
