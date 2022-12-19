@@ -337,25 +337,17 @@
   line-height: 52px;
 }
 
-/*this is a div that contains the form */
-.reservation__form-container {
-  border: 2px solid #e71c1c;
-  max-width: 385px;
-  margin-left: 600px;
-  text-align: center;
-  margin-bottom: 120px;
-}
-
 .reservation__form {
   display: block;
-  max-width: 385px;
+  width: 385px;
   column-gap: 29px;
-  border: 2px solid #ea2899;
+  border: 2px solid #1f0de4;
   text-align: center;
   margin: 0 auto;
 }
 
 .form__fieldset {
+  max-width: fit-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -367,12 +359,6 @@
   margin-left: 0;
   margin-right: 0;
 }
-
-/*
-.form__fieldset:last-of-type {
-  margin-bottom: 120px;
-}
-*/
 
 .form__label {
   display: inline;
@@ -388,8 +374,7 @@
 }
 
 .form__input {
-  max-width: 385px;
-  margin-left: 70px;
+  margin-left: 20px;
   height: 60px;
   margin-top: 8px;
   /*Typography: 3 */
@@ -398,7 +383,7 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  width: 80%;
+  width: 300px;
   margin-bottom: 32px;
 }
 
