@@ -436,29 +436,42 @@
 
 .about__title {
   display: flex;
-  flex-direction: column;
   margin: 0;
   max-width: 251px;
-  border: 2px solid #17cd32;
   line-height: 5px;
-}
-
-.about__title-coffee-shop {
-  margin-top: 30px;
-
-  /* <span> tag to adjust coffee shop <h2> text margin-top down a bit. */
+  /*Typography: 1 */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .about__content {
   display: flex;
   flex-direction: column;
-  line-height: 30px;
   margin-left: 720px;
+  max-width: 600px;
+  margin-bottom: 173px;
 }
 
 .about__paragraph {
-  max-width: 660px;
+  margin: 0;
+  max-width: 960px;
   margin-right: 80px;
+  /*Typography: 2 */
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.about__paragraph_one {
+  margin-bottom: 15px;
+}
+
+.about__paragraph_two {
+  margin-bottom: 15px;
 }
 
 .about__circle {
@@ -467,9 +480,29 @@
   height: 495px;
   border-radius: 100%; /*combination of border-radius and position absolute makes a perfect circle*/
   position: absolute;
-  top: -121px;
-  left: -91px;
+  top: -152px;
+  left: -129px;
   z-index: -1;
+}
+
+.about__circle_animation_blurred {
+  animation-name: pulsate;
+  transform: scale(1.2);
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* 6. footer section */
