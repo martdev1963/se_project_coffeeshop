@@ -1,0 +1,42 @@
+.menu {
+  padding-top: 100px;
+  background-image: url("../images/background_menu.svg");
+  background-color: #041b38;
+}
+
+/*Typography 1: */
+.menu__title {
+  color: #ffffff;
+  margin-left: 750px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+/*Typography 2: */
+.menu__subtitle {
+  color: #ffffff;
+  margin-bottom: 90px;
+  text-align: center;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.menu__cards {
+  margin-left: 80px;
+  max-width: 80vw; /*to stretch out the card list-dividers ( the underscores )*/
+  color: #ffffff;
+  display: flex; /* this establishes a row by default making the main axis (x) */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  /*border: 2px solid #e65019; /* just for aligning elements */
+  row-gap: 50px; /* adjusts the cross axis which is in this case col (y) */
+}
