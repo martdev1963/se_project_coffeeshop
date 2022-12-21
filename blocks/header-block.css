@@ -15,7 +15,8 @@
 
 /* 1.Header task 7:  typography: 3 */
 .header__title {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: #000000;
   position: absolute;
   top: 202px;
@@ -25,6 +26,20 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 28px;
+}
+
+/* 1.Header task 7: span tag portion first line blue text  typography: 2 */
+.header__span-accent {
+  font-family: "Noto Serif", "Times New Roman" sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 10px;
+  color: #2f80ed;
+}
+/*span tag portion 2nd line black font color */
+.header__span-second-line {
+  margin-top: 50px;
 }
 
 /* 1.Header task 8: typography: 4 */
@@ -39,16 +54,7 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-}
-
-/* 1.Header task 7: span tag portion  typography: 2 */
-.header__span-accent {
-  font-family: "Noto Serif", "Times New Roman" sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 10px;
-  color: #2f80ed;
+  z-index: 2;
 }
 
 .header__image {
@@ -57,6 +63,7 @@
   position: absolute;
   top: 124px;
   right: 5px;
+  z-index: 1;
 }
 
 /* typography: 5 */
