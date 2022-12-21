@@ -5,7 +5,6 @@
   flex-direction: column;
   max-width: 1600px;
   align-content: center;
-  /*border: 2px solid #17cd32;*/
   background-image: url("../images/background_reservation.svg");
   background-color: rgb(222, 236, 247);
 }
@@ -28,7 +27,7 @@
 .reservation__form {
   display: block;
   width: 385px;
-  column-gap: 29px;
+  /*column-gap: 29px; /* won't work without display: flex; */
   text-align: center;
   margin: 0 auto;
 }

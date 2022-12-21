@@ -1,6 +1,6 @@
 .form {
-  display: block;
-  column-gap: 29px;
+  /*display: block;*/ /*redundant...already in .reservation __form*/
+  /*column-gap: 29px; /* won't work without display: flex; */
   text-align: center;
 }
 
