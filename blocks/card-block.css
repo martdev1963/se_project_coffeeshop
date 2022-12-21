@@ -40,7 +40,7 @@
 .card__list-item {
   display: flex;
   flex-direction: column; /* this makes the column the main axis and cross axis is then row */
-  font-family: Noto Serif;
+  font-family: Noto serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

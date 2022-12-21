@@ -14,7 +14,6 @@
   display: flex;
   margin: 0;
   max-width: 251px;
-  line-height: 5px;
   /*Typography: 1 */
   font-family: Inter;
   font-style: normal;
@@ -36,7 +35,7 @@
   max-width: 960px;
   margin-right: 80px;
   /*Typography: 2 */
-  font-family: Noto Serif;
+  font-family: Noto serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
