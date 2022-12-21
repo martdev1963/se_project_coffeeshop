@@ -46,15 +46,42 @@
   flex-basis: 40%; /* adjusting the size of the menu cards with this. */
 }
 
-.menu__card-filter {
-  margin-left: 40px; /* this also pushes the .card__espresso to the right */
+/*Typography 3: */
+.menu__card__title {
+  /*display: flex;*/
+  /* margin-left: 40px;*/ /*to align the titles: Filter, Espresso, etc with the card__list-item elements*/
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.menu__card-espresso {
+/*Typography 4: */
+.menu__card__list-item {
+  display: flex;
+  flex-direction: column; /* this makes the column the main axis and cross axis is then row */
+  font-family: Noto serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
-/* this is the "Baked Goods" card block which I want to move to next row and center it. */
-.menu__card-baked-goods {
-  margin-left: 70px;
-  margin-bottom: 0px;
+.menu__card__coffee-size {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu__card__list-divider {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  flex-grow: 0.7; /*affects the length of the list-divider ( underscore )*/
+}
+
+.menu__card__content-baked-goods {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
