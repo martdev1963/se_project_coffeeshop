@@ -29,11 +29,11 @@
   display: block;
   width: 385px;
   column-gap: 29px;
-  /*border: 2px solid #1f0de4;*/
   text-align: center;
   margin: 0 auto;
 }
 
+/*
 .reservation__form-fieldset {
   max-width: fit-content;
   display: flex;
@@ -46,3 +46,4 @@
   margin-left: 0;
   margin-right: 0;
 }
+*/

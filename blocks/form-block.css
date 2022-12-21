@@ -1,3 +1,22 @@
+.form {
+  display: block;
+  column-gap: 29px;
+  text-align: center;
+}
+
+.form__fieldset {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 0;
+  color: #838383;
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .form__label {
   display: inline;
   max-width: 385px;
