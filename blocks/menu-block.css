@@ -41,3 +41,20 @@
   /*border: 2px solid #e65019; /* just for aligning elements */
   row-gap: 50px; /* adjusts the cross axis which is in this case col (y) */
 }
+
+.menu__card {
+  flex-basis: 40%; /* adjusting the size of the menu cards with this. */
+}
+
+.menu__card-filter {
+  margin-left: 40px; /* this also pushes the .card__espresso to the right */
+}
+
+.menu__card-espresso {
+}
+
+/* this is the "Baked Goods" card block which I want to move to next row and center it. */
+.menu__card-baked-goods {
+  margin-left: 70px;
+  margin-bottom: 0px;
+}

@@ -1,25 +1,3 @@
-.card {
-  flex-basis: 40%; /* adjusting the size of the menu cards with this. */
-}
-
-.card__filter {
-  margin-left: 40px; /* this also pushes the .card__espresso to the right */
-}
-
-.card__espresso {
-}
-
-/* this is the "Baked Goods" card block which I want to move to next row and center it. */
-.card__baked-goods {
-  margin-left: 70px;
-  margin-bottom: 0px;
-}
-
-.card__content {
-  /*display: flex;*/
-  /*flex-direction: row;*/
-}
-
 .card__content-baked-goods {
   padding-top: 100px;
   padding-bottom: 100px;
