@@ -18,6 +18,7 @@
 /*Typography 2: */
 .menu__subtitle {
   color: #ffffff;
+  margin: 0;
   margin-bottom: 90px;
   text-align: center;
   font-family: Noto serif;
