@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
 }
 
 /* 1.Header task 7:  typography: 3 */
@@ -17,43 +20,42 @@
   display: flex;
   flex-direction: column;
   color: #000000;
-  position: absolute;
+  /*position: absolute;*/
   top: 202px;
   left: 80px;
-  font-family: Inter; /* already inherited from .page parent class */
+  max-width: 729px;
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
-  line-height: 28px;
+  line-height: 72px;
+  margin: 0;
+  padding: 202px 80px 28px; /* shorthand top left/right bottom */
+  /* default position is static */
 }
 
 /* 1.Header task 7: span tag portion first line blue text  typography: 2 */
 .header__span-accent {
+  display: block;
   font-family: "Noto Serif", "Times New Roman" sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
-  line-height: 10px;
+  line-height: 72px;
   color: #2f80ed;
-}
-/*span tag portion 2nd line black font color */
-.header__span-second-line {
-  margin-top: 50px;
+  /* default position is static */
 }
 
 /* 1.Header task 8: typography: 4 */
 .header__description {
   max-width: 683px;
-  /*margin: 202px 50px 20px 80; /*shorthand: top, right, bottom, left */
-  position: absolute;
-  top: 350px;
-  left: 80px;
   font-family: Noto serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  z-index: 2;
+  margin: 0 80px 0;
+  /* default position is static */
 }
 
 .header__image {
@@ -62,36 +64,26 @@
   position: absolute;
   top: 124px;
   right: 5px;
-  z-index: 1;
+  z-index: -1; /*so that it doesn't cover any text if page width is shrunken.*/
 }
 
 /* typography: 5 */
 .header__paragraphs {
-  /* display: flex;
-    justify-content: flex-end; */
-  /*border: 2px solid #17cd32; /* just to check alignment of elements */
-  position: absolute;
-  bottom: 40px;
-  left: 80px;
-  width: 95%; /* to make room to push address p tag far to the right */
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: flex-end;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px; /* already inherited from .page parent class */
-  line-height: 20px; /* already inherited from .page parent class */
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  margin: auto 80px 40px;
 }
 
 .header__paragraph {
-  /*border: 2px double #e65019; /* just to check alignment of elements */
   margin: 0;
-  padding: 0;
-}
-
-/* BEM: block__element_key_value (modifier) */
-.header__paragraph_content_address {
-  position: absolute;
-  right: 80px;
-  margin-bottom: 40px;
 }
 
 /* Task 1: Header: step 1 (logo block) in brief */

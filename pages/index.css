@@ -38,17 +38,3 @@
   font-size: 16px;
   line-height: 20px;
 }
-
-/* keyframe: pulsate for animating the about circle class: .about__circle_animation_blurred */
-
-@keyframes pulsate {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
