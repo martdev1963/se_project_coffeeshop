@@ -2,32 +2,25 @@
   /*display: block;*/ /*redundant...already in .reservation __form*/
   /*column-gap: 29px; /* won't work without display: flex; */
   /*text-align: center;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 385px;
 }
 
 .form__fieldset {
-  max-width: fit-content;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
   padding: 0;
   color: #838383;
   border: none;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
 }
 
 .form__label {
-  display: inline;
-  max-width: 385px;
   /*Typography: 2 */
-  font-family: Inter;
+  font-family: "Inter";
   font-size: normal;
   font-weight: 500;
   line-height: 20px;
-  padding-bottom: 8px;
-  margin: auto;
-  /*text-align: left;*/
 }
 
 .form__input {
@@ -35,36 +28,36 @@
   height: 60px;
   margin-top: 8px;
   /*Typography: 3 */
-  font-family: Inter;
+  font-family: "Inter";
   font-size: normal;
   font-weight: normal;
   line-height: 30px;
   width: 385px;
   margin-bottom: 32px;
+  box-sizing: border-box; /*centers things*/
+  border-radius: 4px;
+  padding-left: 15px; /* pushes the placeholder text from the left-side 15px */
 }
 
 .form__input-checkbox {
   width: 20px;
   height: 20px;
-  margin-left: 62px;
+  margin-right: 12px;
   border-radius: 2px;
-  background-color: #2f80ed;
-  background-image: url("../images/check.svg");
-}
-
-.form__input-checkbox-label {
-  margin-left: 12px; /*this is for the <span> 12px away from checkbox on the left */
 }
 
 .form__button {
   width: 385px;
   height: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   background-color: #2f80ed;
   color: #ffffff;
   border-radius: 4px;
   transition: opacity ease-in-out 0.3s;
   opacity: 100%;
+  padding: 0;
+  border: none;
+  font-weight: 500;
   /*Typography: 4 */
   font-family: "Inter";
   font-style: normal;
@@ -76,4 +69,11 @@
 .form__button:hover {
   opacity: 70%;
 }
+
+.form__fieldset:last-of-type {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
 /* END OF FORM ELEMENTS */

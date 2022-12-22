@@ -2,6 +2,9 @@
 
 /* Import the block's associated css files here */
 
+/* page.css */
+@import url("../blocks/page.css");
+
 /* header-block */
 @import url("../blocks/header.css");
 
@@ -28,13 +31,3 @@
 
 /* footer-block */
 @import url("../blocks/footer.css");
-
-/* step 6 */
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto; /* so the block is centered for screens over 1600px wide ?? */
-  font-family: "Inter", "Arial" sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}

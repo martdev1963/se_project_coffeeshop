@@ -5,14 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /*border: 2px solid #e65019;*/
+  padding-bottom: 215px;
 }
 
 /* Recipe Typography 1: */
 .recipes__title {
   max-width: 580px;
-  margin-left: 80px;
-  margin-top: 100px;
+  margin: 0;
+  padding: 100px 80px 24px; /* shorthand: top left/right bottom */
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -22,9 +22,10 @@
 
 /* Recipe Typography 2: */
 .recipes__subtitle {
-  margin-left: 80px;
-  margin-bottom: 80px;
-  font-family: Noto serif;
+  margin: 0;
+  padding: 0 80px 80px; /* shorthand: top left/right bottom */
+  max-width: 438px;
+  font-family: "Noto serif";
   font-style: normal;
   font-size: 20px;
   line-height: 30px;
@@ -33,29 +34,23 @@
 /* .recipe__videos element containing the two videos */
 .recipes__videos {
   display: flex;
-  justify-content: space-around;
-  /*flex-grow: 630px;*/
-  flex-wrap: wrap;
-  max-width: 1200px;
-  align-items: center;
-  margin-left: 170px;
-  margin-bottom: 215px;
+  justify-content: center;
+  gap: 40px;
 }
 
 .recipes__iframe {
+  border: none;
+  display: block;
   width: 480px;
   height: 273px;
-  margin-bottom: 24px;
 }
 
 /* 3. Recipe Typography 3: */
 .recipes__video-caption {
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  align-items: center;
-  column-gap: 220px;
-  font-family: Inter;
+  justify-content: space-between;
+  padding-top: 24px;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
