@@ -10,7 +10,6 @@
 }
 
 .reservation__title {
-  border: 2px solid #5117cd;
   margin-left: 640px;
   max-width: 300px;
   text-align: center;
@@ -28,7 +27,7 @@
   display: block;
   width: 385px;
   /*column-gap: 29px; /* won't work without display: flex; */
-  text-align: center;
+  /*text-align: center;*/
   margin: 0 auto;
 }
 

@@ -1,7 +1,7 @@
 .form {
   /*display: block;*/ /*redundant...already in .reservation __form*/
   /*column-gap: 29px; /* won't work without display: flex; */
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .form__fieldset {
@@ -27,6 +27,7 @@
   line-height: 20px;
   padding-bottom: 8px;
   margin: auto;
+  /*text-align: left;*/
 }
 
 .form__input {

@@ -3,31 +3,31 @@
 /* Import the block's associated css files here */
 
 /* header-block */
-@import url("../blocks/header-block.css");
+@import url("../blocks/header.css");
 
 /* nav-block */
-@import url("../blocks/nav-block.css");
+@import url("../blocks/nav.css");
 
 /* menu-block */
-@import url("../blocks/menu-block.css");
+@import url("../blocks/menu.css");
 
 /* card-block */
-@import url("../blocks/card-block.css");
+@import url("../blocks/card.css");
 
 /* recipes-block */
-@import url("../blocks/recipes-block.css");
+@import url("../blocks/recipes.css");
 
 /* reservation-block */
-@import url("../blocks/reservation-block.css");
+@import url("../blocks/reservation.css");
 
 /* form-block */
-@import url("../blocks/form-block.css");
+@import url("../blocks/form.css");
 
 /* about-block */
-@import url("../blocks/about-block.css");
+@import url("../blocks/about.css");
 
 /* footer-block */
-@import url("../blocks/footer-block.css");
+@import url("../blocks/footer.css");
 
 /* step 6 */
 .page {
