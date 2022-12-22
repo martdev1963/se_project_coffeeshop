@@ -2,9 +2,7 @@
   flex-basis: 40%; /* adjusting the size of the menu cards with this. */
 }
 
-.card__bottom-margin-space {
-  margin-bottom: 100px;
-}
+/*removed .card--bottom-margin-space{margin-bottom: 100px;} */
 
 /*Typography 3: */
 .card__title {
