@@ -10,7 +10,7 @@
 }
 
 .reservation__title {
-  margin-left: 640px;
+  margin: 0 auto; /*should be centered, removed the margin per code review*/
   max-width: 300px;
   text-align: center;
   margin-top: 100px;

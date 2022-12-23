@@ -5,6 +5,7 @@
   height: 100vh; /* 100% of the viewport for screens sizes of 720px - 800px*/
   min-height: 720px;
   max-height: 800px;
+  height: 100vh;
   background-color: #ffffff;
   background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
@@ -21,23 +22,21 @@
   flex-direction: column;
   color: #000000;
   /*position: absolute;*/
-  top: 202px;
-  left: 80px;
   max-width: 729px;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif; /* including fallback fonts */
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
   margin: 0;
   padding: 202px 80px 28px; /* shorthand top left/right bottom */
-  /* default position is static */
+  /* default position is static...  correction: no need for coordinates.*/
 }
 
 /* 1.Header task 7: span tag portion first line blue text  typography: 2 */
 .header__span-accent {
   display: block;
-  font-family: "Noto Serif", "Times New Roman" sans-serif;
+  font-family: "Noto serif", "Times New Roman", serif; /* corrected syntax */
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
@@ -49,7 +48,7 @@
 /* 1.Header task 8: typography: 4 */
 .header__description {
   max-width: 683px;
-  font-family: Noto serif;
+  font-family: "Noto serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -73,7 +72,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   align-items: flex-end;
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif; /* including fallback fonts */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -86,7 +85,8 @@
   margin: 0;
 }
 
-/* Task 1: Header: step 1 (logo block) in brief */
+/*The .logo class block needs its own styulesheet as per code review */
+/*
 .logo {
   width: 125px;
   height: 142px;
@@ -94,3 +94,4 @@
   top: 30px;
   left: 30px;
 }
+*/

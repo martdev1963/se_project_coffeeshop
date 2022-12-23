@@ -12,13 +12,16 @@
   padding: 0;
   color: #838383;
   border: none;
-  margin: 0;
+  margin: auto;
 }
 
 .form__label {
   /*Typography: 2 */
-  font-family: "Inter";
-  font-size: normal;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px; /* corrected to 16px per code review */
   font-weight: 500;
   line-height: 20px;
 }
@@ -28,22 +31,26 @@
   height: 60px;
   margin-top: 8px;
   /*Typography: 3 */
-  font-family: "Inter";
-  font-size: normal;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px; /* corrected to 20px per code review */
   font-weight: normal;
   line-height: 30px;
   width: 385px;
   margin-bottom: 32px;
   box-sizing: border-box; /*centers things*/
   border-radius: 4px;
+  border: 1px solid #838383; /* correction: added specified color to border */
   padding-left: 15px; /* pushes the placeholder text from the left-side 15px */
+  color: #000000; /* correction: adding main font color per code review */
 }
 
-.form__input-checkbox {
+.form__input_type_checkbox {
+  /* changed to key/value modifier */
   width: 20px;
   height: 20px;
   margin-right: 12px;
   border-radius: 2px;
+  /*vertical-align: auto;*/
 }
 
 .form__button {
@@ -59,7 +66,7 @@
   border: none;
   font-weight: 500;
   /*Typography: 4 */
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -69,10 +76,8 @@
   opacity: 70%;
 }
 
-.form__fieldset:last-of-type {
+/*.form__fieldset:last-of-type {
   display: flex;
   justify-content: center;
-  vertical-align: middle;
-}
-
-/* END OF FORM ELEMENTS */
+  vertical-align: auto;
+}*/

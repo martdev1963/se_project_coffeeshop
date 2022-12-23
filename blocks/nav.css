@@ -6,7 +6,8 @@
   margin-top: 30px;
   margin-right: 80px;
   /*border: 2px dashed rgb(71, 13, 220); /* just for aligning elements */
-  font-family: Inter; /* already inherited from .page parent class */
+  /* already inherited from .page parent class */
+  font-family: "Inter", Arial, sans-serif; /* including fallback fonts */
   font-style: normal;
   font-weight: 500;
   font-size: 16px; /* already inherited from .page parent class */
@@ -20,7 +21,7 @@
   margin-top: 8px;
   color: #000000;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500; /* corrected as per code review */
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -34,6 +35,6 @@
 .nav__link {
   color: #000000;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500; /* corrected as per code review */
   transition: color linear 0.5s; /* hover state created */
 }

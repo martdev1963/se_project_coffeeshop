@@ -31,3 +31,6 @@
 
 /* footer-block */
 @import url("../blocks/footer.css");
+
+/* logo-block */
+@import url("../blocks/logo.css");

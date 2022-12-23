@@ -3,6 +3,8 @@
   box-sizing: border-box;
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
   padding-top: 60px;
+  padding-right: 100px; /* added padding-right per code review */
+  padding-bottom: 0;
   padding-left: 80px;
 }
 
@@ -18,19 +20,21 @@
   height: 21px;
 }
 
-.footer__social-media-column {
-  flex-basis: 15%;
+/*
+.footer__social-media-column {correction: no need for using flex-basis property to set width
 }
+*/
 
 .footer__social-heading {
   /*Typography: 1 */
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif; /*added fallback and generic fonts*/
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
+  margin: 0 0 20px; /* correction: removing browser default margins & adding 20px to bottom*/
 }
 
 .footer__list {
@@ -41,12 +45,23 @@
 
 .footer__list-item {
   /*Typography: 2 */
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif; /*added fallback and generic fonts*/
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   padding-bottom: 16px;
+}
+
+/* alternative to :last-child pseudo class
+.footer__list-item:last-of-type {
+  margin-bottom: 0px;
+}
+*/
+
+/* correction per code review using :last-child pseudo class */
+.footer__list-item:last-child {
+  margin-bottom: 0px;
 }
 
 .footer__social-icon {
@@ -67,7 +82,7 @@
 
 .footer__copyright {
   /*Typography: 3 */
-  font-family: Inter;
+  font-family: "Inter", Arial, sans-serif; /*added fallback and generic fonts*/
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -75,4 +90,9 @@
   color: #ffffff;
   padding-top: 108px;
   padding-bottom: 60px;
+  /* setting browser default margins to default per code review */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
