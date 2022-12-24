@@ -1,8 +1,8 @@
 .menu {
-  padding-top: 100px;
+  /*padding-top: 100px;*/ /* this is what was making the padding-top be 200px total*/
   background-image: url("../images/background_menu.svg");
   background-color: #0a2750;
-  padding-bottom: 100px;
+  /*padding-bottom: 100px; */ /* this is what was making the padding-bottom be 200px total*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,7 @@
 /*Typography 1: */
 .menu__title {
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto; /* shorthand: top/bottom   left/right */
   text-align: center;
   font-family: "Inter", Arial, sans-serif; /*added fallback and generic fonts*/
   font-style: normal;
@@ -26,7 +26,7 @@
 .menu__subtitle {
   max-width: 780px;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0 auto; /* shorthand: top/bottom   left/right */
   text-align: center;
   font-family: "Noto serif", "Times New Roman", serif; /* including fallback fonts */
   font-style: normal;

@@ -55,13 +55,14 @@
 
 /* alternative to :last-child pseudo class
 .footer__list-item:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0px; (not this one because gap between items is due to padding-bottom)
+  padding-bottom: 0px; (this one would be used instead) 
 }
 */
 
-/* correction per code review using :last-child pseudo class */
+/* Using :last-child pseudo class */
 .footer__list-item:last-child {
-  margin-bottom: 0px;
+  padding-bottom: 0px; /*Correction:removing padding rather than margin-bottom per code review*/
 }
 
 .footer__social-icon {

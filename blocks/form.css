@@ -11,16 +11,16 @@
 
 .form__fieldset {
   padding: 0;
-  color: #838383;
+  color: #000000;
   border: none;
   margin: auto;
 }
 
 .form__label {
   /*Typography: 2 */
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
+  /*display: flexbox;*/ /*per code review*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px; /* corrected to 16px per code review */
   font-weight: 500;
@@ -43,7 +43,7 @@
   border-radius: 4px;
   border: 1px solid #838383; /* correction: added specified color to border */
   padding-left: 15px; /* pushes the placeholder text from the left-side 15px */
-  color: #000000; /* correction: adding main font color per code review */
+  color: #838383; /* correction: added font color stated in brief per code review */
 }
 
 .form__input_type_checkbox {
@@ -53,8 +53,9 @@
   margin-right: 12px;
   border-radius: 2px;
   /*vertical-align: auto;*/
-  margin-bottom: 10px;
-}
+  /*margin-bottom: 10px;*/ /*Removed redundant margin-bottom already in the .form*/
+  margin-top: 30px; /*for the sake of vertically aligning checkbox with label*/
+} /* the checkbox is a child of the .form__label */
 
 .form__button {
   width: 385px;
@@ -82,4 +83,8 @@
 .form__fieldset:last-of-type {
   display: flex;
   justify-content: center;
+}
+
+.form__input::placeholder {
+  color: #838383; /*placeholder text color per brief*/
 }
