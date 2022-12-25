@@ -52,10 +52,12 @@
   height: 20px;
   margin-right: 12px;
   border-radius: 2px;
+  margin-bottom: 0; /* removed margin-bottom from modifier per code review */
   /*vertical-align: auto;*/
   /*margin-bottom: 10px;*/ /*Removed redundant margin-bottom already in the .form*/
-  margin-top: 30px; /*for the sake of vertically aligning checkbox with label*/
+  /*margin-top: 30px; /*for the sake of vertically aligning checkbox with label*/
 } /* the checkbox is a child of the .form__label */
+/*12-25-22 code review: the margin-top: 30px; setting is not in the brief...causes checkbox to be 62px*/
 
 .form__button {
   width: 385px;
